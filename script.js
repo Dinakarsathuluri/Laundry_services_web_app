@@ -204,7 +204,7 @@ if (cart.length === 0) {
 }
 
 
-  const servicesNames = cart.map(item => item.serviceName).join(", ");
+  const servicesNames = cart.map(item => item.serviceName).join("\n");
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0).toFixed(2);
 
 
